@@ -1,4 +1,5 @@
 # Demos_webapps
+
 Ejercicios de Aplicaciones Web con Python 3,SQLite3 y Web.py
 
 # 1. Crear un Virtual Environment
@@ -74,3 +75,12 @@ Crear un punto de control (**commit**) con los cambios realizados al proyecto.
 ````shell 
 git commit -m "CREATED configuración del ambiente virtual"
 ````
+
+## 10. Realizar un **push** hacia el repositorio
+
+Realizar un **push** hacia el repositorio para sincronizar los cambios realizados en el proyecto.
+
+````shell
+git push -u origin main
+````
+
