@@ -1,7 +1,7 @@
 import web
 
 urls = (
-    '/','Index',
+    '/', 'Index',
     '/calculadora','Calculadora'
 )
 app = web.application(urls, globals())
@@ -25,25 +25,8 @@ class Calculadora:
         numero_2 = int(formulario['numero_2'])
         operacion = formulario['operacion']
 
-        if operacion == 'sumar':
-            resultado =  numero_1 + numero_2
-        elif operacion == 'restar':
-            resultado =  numero_1 - numero_2
-        elif operacion == 'dividir':
-            resultado =  numero_1 / numero_2
-        elif operacion == 'multiplicacion':
-            resultado =  numero_1 * numero_2
-        elif operacion == 'raiz':
-            resultado =  numero_1 ** 0.5 
-        elif operacion == 'potencia':
-            resultado =  numero_1 ** numero_2
-        elif operacion == 'modulo':
-            resultado =  numero_1 % numero_2
-        elif operacion == 'limpiar':
-         
-            numero_1 = 0
-            numero_2 = 0
-            resultado = 0
+
+        resultado =  numero_1 + numero_2
 
         print(f"El tipo de dato es: {type(numero_1)}")
 
