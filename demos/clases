@@ -1,0 +1,65 @@
+import web
+
+urls = (
+    '/', 'Index',
+    '/Mesa', 'Mesa',
+    '/Silla', 'Silla'
+    '/Smartphone', 'Smartphone'
+    '/Banco', 'Banco'
+    '/Transporte', 'Transporte'
+    '/Coche', '/Coche'
+    '/Personaje_RPG', 'Personaje_RPG'
+    '/Alumno', 'Alumno'
+    '/Libro_Biblioteca', 'Libro_Biblioteca'
+    '/Perro', 'Perro'
+)
+app = web.application(urls, globals())
+
+
+class Index:
+    def GET(self):
+        return 'Hola mundo'
+    
+class Mesa:
+    def GET(self):
+        return 'Mesa'
+    
+class Silla:
+    def GET(self):
+        return 'Silla'
+
+class Smartphone:
+    def GET(self):
+        return 'Smartphone'
+    
+class Banco:
+    def GET(self):
+        return 'Banco'
+
+class Transporte:
+    def GET(self):
+        return 'Transporte'
+
+class Coche:
+    def GET(self):
+        return 'Coche'
+    
+class Personaje_RPG:
+    def GET(self):
+        return 'Personaje_RPG'
+    
+class Alumno:
+    def GET(self):
+        return 'Alumno'
+    
+class Libro_Biblioteca:
+    def GET(self):
+        return 'Libro_Biblioteca'
+    
+class Perro:
+    def GET(self):
+        return 'Perro'
+ 
+    
+if __name__ == "__main__":
+    app.run()
