@@ -1,34 +1,22 @@
-$def with(numero_1, numero_2, resultado)
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <title>Calculadora</title>
-    </head>
-    <body>
-        <h1>Calculadora</h1>
+$def with (numero_1, numero_2, resultado)
 
-        <form method="POST">
-            <label>Número 1</label><br>
-            <input type="number" name="numero_1" id="numero_1" value="$numero_1"><br>
+<h2>Calculadora</h2>
 
-            <label>Número 2</label><br>
-            <input type="number" name="numero_2" id="numero_2" value="$numero_2"><br>
+<form method="post">
+    <input type="number" name="numero_1" value="$numero_1">
+    <input type="number" name="numero_2" value="$numero_2">
 
-            <label>Resultado</label><br>
-            <input type="number" name="resultado" id="resultado" value=$resultado><br>
+    <select name="operacion">
+        <option value="sumar">Sumar</option>
+        <option value="restar">Restar</option>
+        <option value="multiplicacion">Multiplicar</option>
+        <option value="dividir">Dividir</option>
+        <option value="potencia">Potencia</option>
+        <option value="raiz">Raíz</option>
+        <option value="modulo">Módulo</option>
+    </select>
 
-            <button name="operacion" value="sumar">Sumar</button><br>
-            <button name="operacion" value="restar">Restar</button><br>
-            <button name="operacion" value="dividir">Dividir</button><br>
-            <button name="operacion" value="multiplicacion">Multiplicacion</button><br>
-            <button name="operacion" value="potencia">Potencia</button><br>
-            <button name="operacion" value="modulo">Modulo</button><br>
-            <button name="operacion" value="limpiar">Limpiar</button><br>
+    <button type="submit">Calcular</button>
+</form>
 
-        </form>
-
-        <a href="/">Index</a>
-    </body>
-</html>  
+<h3>Resultado: $resultado</h3>
